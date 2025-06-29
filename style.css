@@ -1,0 +1,114 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: url('background.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: #222;
+}
+
+.overlay {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(255, 255, 255, 0.6); /* soft overlay */
+  z-index: -1;
+}
+
+.hero {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.title {
+  font-size: 2.4rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  font-size: 1rem;
+  color: #444;
+  margin-bottom: 40px;
+}
+
+.card {
+  max-width: 420px;
+  margin: auto;
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(10px);
+  border-radius: 18px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+}
+
+.card label {
+  display: block;
+  text-align: left;
+  margin: 12px 0 6px;
+  font-weight: 500;
+}
+
+.card input,
+.card select {
+  width: 100%;
+  padding: 12px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background: #fff;
+}
+
+.button-group {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.card button {
+  flex: 1;
+  padding: 12px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.card button:not(.reset) {
+  background-color: #000;
+  color: #fff;
+}
+
+.card button:not(.reset):hover {
+  background-color: #333;
+}
+
+.card button.reset {
+  background-color: #e0e0e0;
+  color: #000;
+}
+
+.card button.reset:hover {
+  background-color: #cfcfcf;
+}
+
+.result {
+  margin-top: 25px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #111;
+  opacity: 1;
+  transition: all 0.3s ease;
+}
+
+.hidden {
+  opacity: 0;
+  transform: translateY(10px);
+}
+
+footer {
+  margin-top: 60px;
+  font-size: 0.9rem;
+  color: #666;
+}
